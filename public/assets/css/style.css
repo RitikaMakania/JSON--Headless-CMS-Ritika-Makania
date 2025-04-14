@@ -1,0 +1,113 @@
+body {
+    font-family: mulish;
+}
+
+.row {
+    /* background-color: aquamarine; */
+}
+
+.col {
+    /* background-color: red; */
+}
+.col-8 {
+    /* background-color: rgb(223, 75, 42); */
+}
+
+.col-4 {
+    /* background-color: blueviolet; */
+}
+
+
+/* Variable */
+
+/* .list-group {
+    background-color:#363740;
+    color: #A4A6B3;
+    text-align: left;
+} */
+
+.list-group-item {
+    text-align: left !important;
+    color:#363740;
+} 
+
+.charte {
+    border: 1px solid #DFE0EB !important;
+    border-right: none !important;
+}
+
+.list-group-item.rte {
+    border: 1px solid #DFE0EB !important;
+    background-color:#FFFFFF;
+    color: #A4A6B3;
+}
+
+.list-group-item.active {
+    background-color: #9fa2b436 !important;
+  }
+
+.title h1 {
+    padding-top: 32px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.border {
+    border: solid 1px #3751FF !important;
+    color: #3751FF;
+}
+
+.cts p{
+    font-family: mulish;
+    font-size: 16px;
+    color: #9FA2B4;
+}
+
+.cts h5{
+    font-family: mulish;
+    font-size: 24px;
+    font-weight: 700;
+    color: #252733;
+}
+
+.badge.urgent {
+    background-color: #FEC400;
+    font-family: mulish;
+    font-weight: 700;
+    font-size: 11px;
+    align-items: center;
+}
+.badge.new {
+    background-color: #29CC97;
+    font-family: mulish;
+    font-weight: 700;
+    font-size: 11px;
+    align-items: center;
+}
+.badge.default {
+    background-color: #F0F1F7;
+    color: #9FA2B4;
+    font-family: mulish;
+    font-weight: 700;
+    font-size: 11px;
+    align-items: center;
+}
+
+button {
+    text-decoration: none !important;
+}
+
+button.list-group-item-action {
+    background-color: #363740 !important;
+    border: none !important;
+
+    font-family: mulish !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+
+
+    color: #A4A6B3;
+    text-align: left;
+}
