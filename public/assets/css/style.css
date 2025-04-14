@@ -1,113 +1,83 @@
-body {
-    font-family: mulish;
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .custom-sidebar {
+    background-color: #363740 !important; /* Sidebar main color */
+    color: #DDE2FF !important; /* Text color for sidebar */
+    min-height: 120vh; 
 }
 
-.row {
-    /* background-color: aquamarine; */
+.custom-sidebar .list-group-item {
+    background-color: transparent; 
+    border: none; 
+    color: #dde2ff !important; /* Text color for list items */
 }
 
-.col {
-    /* background-color: red; */
-}
-.col-8 {
-    /* background-color: rgb(223, 75, 42); */
-}
-
-.col-4 {
-    /* background-color: blueviolet; */
+.custom-sidebar .list-group-item.active {
+    background-color: #495057 !important; /* Darker background for active item */
+    border: none; /* Remove borders */
+    color: #dde2ff !important; /* Ensure active item text is visible */
 }
 
-
-/* Variable */
-
-/* .list-group {
-    background-color:#363740;
-    color: #A4A6B3;
-    text-align: left;
-} */
-
-.list-group-item {
-    text-align: left !important;
-    color:#363740;
-} 
-
-.charte {
-    border: 1px solid #DFE0EB !important;
-    border-right: none !important;
+.custom-sidebar .list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+    color: #dde2ff !important; 
 }
 
-.list-group-item.rte {
-    border: 1px solid #DFE0EB !important;
-    background-color:#FFFFFF;
-    color: #A4A6B3;
+.behind {
+    background-color: #F7F8FC !important; /* Light background for main content */
 }
 
-.list-group-item.active {
-    background-color: #9fa2b436 !important;
+/* Additional Styling for Cards and SVG */
+.card {
+    height: 100%; /* Ensure cards have the same height */
+    border: none; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.svg-container {
+    width: 100%; /* Ensure SVG spans the full width */
+    height: auto; 
+    overflow: auto; 
+}
+
+.cards-container {
+    margin-top: 20px; /* Shift cards down */
+    width: 100%; 
+}
+.task-container {
+    display: flex;
+    align-items: center;
+}
+.task-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f8f9fa; /* Light background */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.task-button:hover {
+    background-color: #e9ecef; /* Slightly darker on hover */
+}
+a {
+    text-decoration: none;
   }
 
-.title h1 {
-    padding-top: 32px;
-    padding-bottom: 24px;
-    padding-left: 16px;
-    font-weight: 700;
-    font-size: 19px;
-}
-
-.border {
-    border: solid 1px #3751FF !important;
-    color: #3751FF;
-}
-
-.cts p{
-    font-family: mulish;
-    font-size: 16px;
-    color: #9FA2B4;
-}
-
-.cts h5{
-    font-family: mulish;
-    font-size: 24px;
-    font-weight: 700;
-    color: #252733;
-}
-
-.badge.urgent {
-    background-color: #FEC400;
-    font-family: mulish;
-    font-weight: 700;
-    font-size: 11px;
-    align-items: center;
-}
-.badge.new {
-    background-color: #29CC97;
-    font-family: mulish;
-    font-weight: 700;
-    font-size: 11px;
-    align-items: center;
-}
-.badge.default {
-    background-color: #F0F1F7;
-    color: #9FA2B4;
-    font-family: mulish;
-    font-weight: 700;
-    font-size: 11px;
-    align-items: center;
-}
-
-button {
-    text-decoration: none !important;
-}
-
-button.list-group-item-action {
-    background-color: #363740 !important;
-    border: none !important;
-
-    font-family: mulish !important;
-    font-size: 16px !important;
-    font-weight: 400 !important;
-
-
-    color: #A4A6B3;
-    text-align: left;
-}
+  /* mobile view */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    .container {
+      padding: 10px;
+    }
+    .custom-sidebar {
+        display: none;
+    }
+  }

@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-assignment-grp3",
+  "name": "bootstrap-group-project-ritika-makania",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3",
     "lite-server": "^2.6.1"
-  }
+  },
+  "description": ""
 }
